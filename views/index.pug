@@ -3,3 +3,13 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+
+  each message in messages
+    section
+      div
+        p Default Title
+      div 
+        p= message.text 
+      div
+        p= message.user
