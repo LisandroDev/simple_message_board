@@ -5,18 +5,18 @@ const messages = [
   {
     text: "Hi there!",
     user: "Amando",
-    added: new Date(),
+    added: new Date().toISOString().split("T")[0],
   },
   {
     text: "Hello World!",
     user: "Charles",
-    added: new Date(),
+    added: new Date().toISOString().split("T")[0],
   },
 ];
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Express" , messages: messages});
+  res.render("index", { title: "Express", messages: messages });
 });
 
 module.exports = router;

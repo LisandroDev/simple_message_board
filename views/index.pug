@@ -6,10 +6,8 @@ block content
 
 
   each message in messages
-    section
-      div
-        p Default Title
-      div 
-        p= message.text 
-      div
-        p= message.user
+    section(class="card")
+      div(class="card-text") 
+        span(class="text") #{message.text}
+      div(class="card-author")
+        span(class="text") #{message.user} at #{message.added}
