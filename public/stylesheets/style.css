@@ -1,3 +1,7 @@
+
+h1{
+  color: #cacfd1;
+}
 body {
   display: flex;
   justify-content: center;
@@ -52,10 +56,25 @@ a {
   font-weight: bold;
   padding: 5px;
 }
+.form-new{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+#POST-text{
+  width: 25vw;
+  height: 15vh;
+}
+
+#POST-name{
+  width: 10vw;
+}
 
 @media screen and (max-width: 480px) {
   .text {
-  font-size: 44px;
+  font-size: 44rem;
   font-family: "Epilogue", sans-serif;
   font-family: "Kosugi Maru", sans-serif;
   font-family: "Lato", sans-serif;

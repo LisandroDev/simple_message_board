@@ -1,0 +1,9 @@
+extends layout 
+block content
+    form(method="POST" action="/new" class="form-new")
+     h1 Add new message
+     label(for="POST-name") Name 
+     input(id="POST-name" name="name" type="text" required)
+     label(for="POST-text") Message 
+     input(id="POST-text" name="text" type="text" required)
+     <input type="submit" value="Submit">
